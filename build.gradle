@@ -11,8 +11,10 @@ buildscript {
         // NOTE: Do not place your application dependencies here; they belong
         // in the ind
     }
-    exec {
-         commandLine "${project.rootDir}/git.sh", "1", "${project.rootDir}"
+    if(new File("${project.rootDir}/git.sh").exists()) {
+        exec {
+            commandLine "${project.rootDir}/git.sh", "1", "${project.rootDir}"
+        }
     }
 }
 
