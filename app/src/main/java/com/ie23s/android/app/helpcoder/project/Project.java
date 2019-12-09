@@ -9,5 +9,6 @@ public class Project {
     private int projectTime;
 
     public Project() {
+        
     }
 }
