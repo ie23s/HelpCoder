@@ -15,8 +15,6 @@ android {
         applicationId "com.ie23s.android.app.helpcoder"
         minSdkVersion 15
         targetSdkVersion 28
-        versionCode 1
-        versionName "1.0"
         versionCode versionMajor * 10000
                     + versionMinor * 100
                     + versionPatch
