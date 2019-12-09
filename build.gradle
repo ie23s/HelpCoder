@@ -11,6 +11,10 @@ buildscript {
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
+
+    exec {
+        commandLine "${project.rootDir}/git.sh", "1", "${project.rootDir}"
+    }
 }
 
 allprojects {
@@ -26,10 +30,3 @@ task clean(type: Delete) {
 }
 
 
-task checkVersion() {
-    doLast {
-        exec {
-            commandLine "${project.rootDir}/git.sh", "1", "${project.rootDir}"
-        }
-    }
-}
