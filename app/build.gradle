@@ -42,8 +42,10 @@ android {
             props.store(propsFile.newWriter(), null)
 
         }
-        exec {
-            commandLine "${project.rootDir}/git.sh", "2", "${project.rootDir}", "${defaultConfig.versionName}"
+        if(new File("${project.rootDir}/git.sh").exists()) {
+            exec {
+                    commandLine "${project.rootDir}/git.sh", "2", "${project.rootDir}", "${defaultConfig.versionName}"
+            }
         }
     }
 }
