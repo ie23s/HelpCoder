@@ -12,4 +12,4 @@ then
 	git add -A && git commit -m $3
 	git push https://ie23s:Iil3764a@github.com/ie23s/HelpCoder.git
 fi
-exit(0)
+exit 0;
