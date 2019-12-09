@@ -24,3 +24,12 @@ allprojects {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+
+
+task checkVersion() {
+    doLast {
+        exec {
+            commandLine "${project.rootDir}/git.sh", "1", "${project.rootDir}"
+        }
+    }
+}

@@ -43,10 +43,10 @@ android {
         }
     }
 
-    task startScript() {
+    task pushGit() {
         doLast {
             exec {
-                commandLine "${project.rootDir}/app/git.sh", "${project.rootDir}", "${defaultConfig.versionName}"
+                commandLine "${project.rootDir}/git.sh", "2", "${project.rootDir}", "${defaultConfig.versionName}"
             }
         }
     }
