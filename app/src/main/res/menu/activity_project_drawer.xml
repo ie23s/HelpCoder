@@ -5,26 +5,74 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_front_end"
+            android:id="@+id/statistics_fragment"
             android:icon="@drawable/ic_menu_camera"
-            android:title="@string/menu_home" />
-        <item
-            android:id="@+id/nav_back_end"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="@string/menu_gallery" />
+            android:title="Statistics" />
     </group>
 
-<!--    <item android:title="Communicate">-->
-<!--        <menu>-->
-<!--            <item-->
-<!--                android:id="@+id/nav_share"-->
-<!--                android:icon="@drawable/ic_menu_share"-->
-<!--                android:title="@string/menu_share" />-->
-<!--            <item-->
-<!--                android:id="@+id/nav_send"-->
-<!--                android:icon="@drawable/ic_menu_send"-->
-<!--                android:title="@string/menu_send" />-->
-<!--        </menu>-->
-<!--    </item>-->
+    <item android:title="Tasks">
+        <menu>
+            <item
+                android:id="@+id/taks_list_0_fragment"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Tasks list #" />
+            <item
+                android:id="@+id/taks_list_1_fragment"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Tasks list #" />
+            <item
+                android:id="@+id/taks_list_2_fragment"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Tasks list #" />
+            <item
+                android:id="@+id/taks_list_3_fragment"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Tasks list #" />
+            <item
+                android:id="@+id/taks_list_4_fragment"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Tasks list #" />
+            <item
+                android:id="@+id/taks_list_5_fragment"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Tasks list #" />
+            <item
+                android:id="@+id/taks_list_6_fragment"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Tasks list #" />
+            <item
+                android:id="@+id/taks_list_7_fragment"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Tasks list #" />
+            <item
+                android:id="@+id/taks_list_8_fragment"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Tasks list #" />
+            <item
+                android:id="@+id/taks_list_9_fragment"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Tasks list #" />
+            <item
+                android:id="@+id/taks_list_10_fragment"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Tasks list #" />
+            <item
+                android:id="@+id/taks_list_11_fragment"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Tasks list #" />
+            <item
+                android:id="@+id/taks_list_12_fragment"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Tasks list #" />
+            <item
+                android:id="@+id/taks_list_13_fragment"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Tasks list #" />
+            <item
+                android:id="@+id/taks_list_14_fragment"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Tasks list #" />
+        </menu>
+    </item>
 
 </menu>

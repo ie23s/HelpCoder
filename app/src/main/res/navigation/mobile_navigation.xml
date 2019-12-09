@@ -6,8 +6,8 @@
     app:startDestination="@+id/statistics_fragment">
     <fragment
         android:id="@+id/statistics_fragment"
-        android:name="com.ie23s.android.app.helpcoder.project.ui.taskslist.fragments.TaskList0"
-        android:label="Tasklist0" >
+        android:name="com.ie23s.android.app.helpcoder.project.ui.statistics.StatisticFragment"
+        android:label="Statistics" >
     </fragment>
     <fragment
         android:id="@+id/taks_list_0_fragment"

@@ -31,7 +31,7 @@ public abstract class TasksListFragment extends Fragment {
         View view =  inflater.inflate(R.layout.fragment_tasks_list, container, false);
 
         loadTasks();
-        createRV();
+       // createRV();
 
         return view;
     }
@@ -39,14 +39,14 @@ public abstract class TasksListFragment extends Fragment {
     /**
      * This method loads RecyclerView and fulls it with content.
      */
-    private void createRV() {
-        RecyclerView rv = (RecyclerView) view.findViewById(R.id.frarment_tasks_list_rv);
-        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());
-        RVAdapter rvAdapter = new RVAdapter(this);
-        rv.setLayoutManager(linearLayoutManager);
-        rv.setAdapter(rvAdapter);
-
-    }
+//    private void createRV() {
+//        RecyclerView rv = (RecyclerView) view.findViewById(R.id.frarment_tasks_list_rv);
+//        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());
+//        RVAdapter rvAdapter = new RVAdapter(this);
+//        rv.setLayoutManager(linearLayoutManager);
+//        rv.setAdapter(rvAdapter);
+//
+//    }
 
     ArrayList<Task> getTasks() {
         return tasks;

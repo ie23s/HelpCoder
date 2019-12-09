@@ -46,12 +46,17 @@ public class ProjectActivity extends AppCompatActivity {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_front_end, R.id.nav_back_end)
+                R.id.statistics_fragment, R.id.taks_list_0_fragment,
+                R.id.taks_list_1_fragment, R.id.taks_list_2_fragment,
+                R.id.taks_list_3_fragment, R.id.taks_list_4_fragment,
+                R.id.taks_list_5_fragment, R.id.taks_list_6_fragment,
+                R.id.taks_list_7_fragment, R.id.taks_list_8_fragment,
+                R.id.taks_list_9_fragment, R.id.taks_list_10_fragment,
+                R.id.taks_list_11_fragment, R.id.taks_list_12_fragment,
+                R.id.taks_list_13_fragment, R.id.taks_list_14_fragment)
                 .setDrawerLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
-//        navController.navigate();
-
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
     }
