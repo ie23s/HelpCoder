@@ -30,21 +30,19 @@ android {
             versionNameSuffix ".debug"
             resValue "string", "app_version",
                     "${defaultConfig.versionName}${versionNameSuffix}"
-            props.setProperty("patch", String.valueOf(versionPatch+1))
-            props.store(propsFile.newWriter(), null)
         }
 
         release {
             resValue "string", "app_version", "${defaultConfig.versionName}"
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-            exec {
-                commandLine "${project.rootDir}/git.sh", "2", "${project.rootDir}", "${defaultConfig.versionName}"
-            }
-            props.setProperty("patch", String.valueOf(versionPatch+1))
-            props.store(propsFile.newWriter(), null)
 
         }
+        exec {
+            commandLine "${project.rootDir}/git.sh", "2", "${project.rootDir}", "${defaultConfig.versionName}"
+        }
+        props.setProperty("patch", String.valueOf(versionPatch+1))
+        props.store(propsFile.newWriter(), null)
     }
 }
 
