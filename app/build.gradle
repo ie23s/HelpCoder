@@ -1,5 +1,14 @@
 apply plugin: 'com.android.application'
 
+File propsFile = new File('version.properties')
+
+def props = new Properties()
+props.load(propsFile.newReader())
+
+def versionMajor = Integer.parseInt(props.getProperty("major"))
+def versionMinor = Integer.parseInt(props.getProperty("minor"))
+def versionPatch = Integer.parseInt(props.getProperty("patch"))
+
 android {
     compileSdkVersion 28
     defaultConfig {
@@ -8,12 +17,32 @@ android {
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
+        versionCode versionMajor * 10000
+                    + versionMinor * 100
+                    + versionPatch
+        versionName "${versionMajor}.${versionMinor}.${versionPatch}"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
+
     buildTypes {
+        debug {
+            versionNameSuffix ".debug"
+            resValue "string", "app_version",
+                    "${defaultConfig.versionName}${versionNameSuffix}"
+            props.setProperty("patch", String.valueOf(versionPatch+1))
+            props.store(propsFile.newWriter(), null)
+        }
+
         release {
+            resValue "string", "app_version", "${defaultConfig.versionName}"
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            exec {
+                commandLine "git commit -a -m ${defaultConfig.versionName}"
+                //commandLine "git push"
+            }
+            props.setProperty("patch", String.valueOf(versionPatch+1))
+            props.store(propsFile.newWriter(), null)
         }
     }
 }

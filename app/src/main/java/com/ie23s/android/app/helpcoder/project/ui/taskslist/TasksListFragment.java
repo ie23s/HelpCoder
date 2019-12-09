@@ -12,7 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.ie23s.android.app.helpcoder.R;
-import com.ie23s.android.app.helpcoder.project.Task;
+import com.ie23s.android.app.helpcoder.project.task.Task;
 
 import java.util.ArrayList;
 

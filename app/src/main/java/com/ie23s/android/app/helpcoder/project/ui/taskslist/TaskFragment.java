@@ -1,4 +1,4 @@
-package com.ie23s.android.app.helpcoder.project.ui.settings;
+package com.ie23s.android.app.helpcoder.project.ui.taskslist;
 
 import androidx.lifecycle.ViewModelProviders;
 
@@ -14,27 +14,24 @@ import android.view.ViewGroup;
 
 import com.ie23s.android.app.helpcoder.R;
 
-public class SettingsFragment extends Fragment {
+public class TaskFragment extends Fragment {
 
-    private SettingsViewModel mViewModel;
+    private TaskViewModel mViewModel;
 
-    public static SettingsFragment newInstance() {
-        return new SettingsFragment();
+    public static TaskFragment newInstance() {
+        return new TaskFragment();
     }
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        Bundle bundle = getArguments();
-        assert bundle != null;
-        bundle.getInt("id");
-        return inflater.inflate(R.layout.settings_fragment, container, false);
+        return inflater.inflate(R.layout.task_fragment, container, false);
     }
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        mViewModel = ViewModelProviders.of(this).get(SettingsViewModel.class);
+        mViewModel = ViewModelProviders.of(this).get(TaskViewModel.class);
         // TODO: Use the ViewModel
     }
 

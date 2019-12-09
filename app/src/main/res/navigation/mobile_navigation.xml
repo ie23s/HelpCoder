@@ -2,16 +2,142 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/mobile_navigation">
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/statistics_fragment">
     <fragment
-        android:id="@+id/nav_front_end"
-        android:name="com.ie23s.android.app.helpcoder.project.ui.FrontEndFragment"
-        android:label="Front-End"
-        tools:layout="@layout/fragment_tasks_list" />
+        android:id="@+id/statistics_fragment"
+        android:name="com.ie23s.android.app.helpcoder.project.ui.taskslist.fragments.TaskList0"
+        android:label="Tasklist0" >
+    </fragment>
     <fragment
-        android:id="@+id/nav_back_end"
-        android:name="com.ie23s.android.app.helpcoder.project.ui.FrontEndFragment"
-        android:label="Back-End"
-        tools:layout="@layout/fragment_tasks_list" />
+        android:id="@+id/taks_list_0_fragment"
+        android:name="com.ie23s.android.app.helpcoder.project.ui.taskslist.fragments.TaskList0"
+        android:label="Tasklist0" >
+        <action
+            android:id="@+id/action_taks_list_0_fragment_to_task_fragment"
+            app:destination="@id/task_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/taks_list_1_fragment"
+        android:name="com.ie23s.android.app.helpcoder.project.ui.taskslist.fragments.TaskList1"
+        android:label="Tasklist1" >
+        <action
+            android:id="@+id/action_taks_list_1_fragment_to_task_fragment"
+            app:destination="@id/task_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/taks_list_2_fragment"
+        android:name="com.ie23s.android.app.helpcoder.project.ui.taskslist.fragments.TaskList2"
+        android:label="Tasklist2" >
+        <action
+            android:id="@+id/action_taks_list_2_fragment_to_task_fragment"
+            app:destination="@id/task_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/taks_list_3_fragment"
+        android:name="com.ie23s.android.app.helpcoder.project.ui.taskslist.fragments.TaskList3"
+        android:label="Tasklist3" >
+        <action
+            android:id="@+id/action_taks_list_3_fragment_to_task_fragment"
+            app:destination="@id/task_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/taks_list_4_fragment"
+        android:name="com.ie23s.android.app.helpcoder.project.ui.taskslist.fragments.TaskList4"
+        android:label="Tasklist4" >
+        <action
+            android:id="@+id/action_taks_list_4_fragment_to_task_fragment"
+            app:destination="@id/task_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/taks_list_5_fragment"
+        android:name="com.ie23s.android.app.helpcoder.project.ui.taskslist.fragments.TaskList5"
+        android:label="Tasklist5" >
+        <action
+            android:id="@+id/action_taks_list_5_fragment_to_task_fragment"
+            app:destination="@id/task_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/taks_list_6_fragment"
+        android:name="com.ie23s.android.app.helpcoder.project.ui.taskslist.fragments.TaskList6"
+        android:label="Tasklist6" >
+        <action
+            android:id="@+id/action_taks_list_6_fragment_to_task_fragment"
+            app:destination="@id/task_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/taks_list_7_fragment"
+        android:name="com.ie23s.android.app.helpcoder.project.ui.taskslist.fragments.TaskList7"
+        android:label="Tasklist7" >
+        <action
+            android:id="@+id/action_taks_list_7_fragment_to_task_fragment"
+            app:destination="@id/task_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/taks_list_8_fragment"
+        android:name="com.ie23s.android.app.helpcoder.project.ui.taskslist.fragments.TaskList8"
+        android:label="Tasklist8" >
+        <action
+            android:id="@+id/action_taks_list_8_fragment_to_task_fragment"
+            app:destination="@id/task_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/taks_list_9_fragment"
+        android:name="com.ie23s.android.app.helpcoder.project.ui.taskslist.fragments.TaskList9"
+        android:label="Tasklist9" >
+        <action
+            android:id="@+id/action_taks_list_9_fragment_to_task_fragment"
+            app:destination="@id/task_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/taks_list_10_fragment"
+        android:name="com.ie23s.android.app.helpcoder.project.ui.taskslist.fragments.TaskList0"
+        android:label="Tasklist10" >
+        <action
+            android:id="@+id/action_taks_list_10_fragment_to_task_fragment"
+            app:destination="@id/task_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/taks_list_11_fragment"
+        android:name="com.ie23s.android.app.helpcoder.project.ui.taskslist.fragments.TaskList11"
+        android:label="Tasklist11" >
+        <action
+            android:id="@+id/action_taks_list_11_fragment_to_task_fragment"
+            app:destination="@id/task_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/taks_list_12_fragment"
+        android:name="com.ie23s.android.app.helpcoder.project.ui.taskslist.fragments.TaskList12"
+        android:label="Tasklist12" >
+        <action
+            android:id="@+id/action_taks_list_12_fragment_to_task_fragment"
+            app:destination="@id/task_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/taks_list_13_fragment"
+        android:name="com.ie23s.android.app.helpcoder.project.ui.taskslist.fragments.TaskList13"
+        android:label="Tasklist13" >
+        <action
+            android:id="@+id/action_taks_list_13_fragment_to_task_fragment"
+            app:destination="@id/task_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/taks_list_14_fragment"
+        android:name="com.ie23s.android.app.helpcoder.project.ui.taskslist.fragments.TaskList14"
+        android:label="Tasklist14" >
+        <action
+            android:id="@+id/action_taks_list_14_fragment_to_task_fragment"
+            app:destination="@id/task_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/task_fragment"
+        android:name="com.ie23s.android.app.helpcoder.project.ui.taskslist.TaskFragment"
+        android:label="Task" >
+    </fragment>
+    <fragment
+        android:id="@+id/settings_fragment"
+        android:name="com.ie23s.android.app.helpcoder.project.ui.settings.SettingsFragment"
+        android:label="Settings" >
+    </fragment>
 
 </navigation>
