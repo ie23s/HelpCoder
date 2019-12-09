@@ -42,6 +42,14 @@ android {
 
         }
     }
+
+    task startScript() {
+        doLast {
+            exec {
+                commandLine "${project.rootDir}/app/git.sh", "${project.rootDir}", "${defaultConfig.versionName}"
+            }
+        }
+    }
 }
 
 dependencies {
