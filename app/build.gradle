@@ -30,10 +30,6 @@ android {
             versionNameSuffix ".debug"
             resValue "string", "app_version",
                     "${defaultConfig.versionName}${versionNameSuffix}"
-
-            exec {
-                commandLine "${project.rootDir}/git.sh", "2", "${project.rootDir}", "${defaultConfig.versionName}"
-            }
             props.setProperty("patch", String.valueOf(versionPatch+1))
             props.store(propsFile.newWriter(), null)
         }
