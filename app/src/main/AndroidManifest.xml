@@ -12,6 +12,7 @@
         <activity
             android:name=".settings.SettingsActivity"
             android:label="@string/title_activity_settings"></activity>
+
         <activity android:name=".additionalactivities.licences.LicencesListActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

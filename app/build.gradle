@@ -1,6 +1,6 @@
 apply plugin: 'com.android.application'
 
-File propsFile = new File('version.properties')
+File propsFile = new File("${project.rootDir}/version.properties")
 
 def props = new Properties()
 props.load(propsFile.newReader())
@@ -37,12 +37,9 @@ android {
             resValue "string", "app_version", "${defaultConfig.versionName}"
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-            exec {
-                commandLine "git commit -a -m ${defaultConfig.versionName}"
-                //commandLine "git push"
-            }
             props.setProperty("patch", String.valueOf(versionPatch+1))
             props.store(propsFile.newWriter(), null)
+
         }
     }
 }
