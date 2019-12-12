@@ -16,6 +16,6 @@ public class ProgressUtilTest1 {
     public void updateProgress() {
         ProgressUtil progressUtil = new ProgressUtil();
         progressUtil.updateProgress(0.5F);
-        Log.i("Color", String.format("#%06X", (0xFFFFFF & progressUtil.getColor())));
+        Log.d("Color", String.format("#%06X", (0xFFFFFF & progressUtil.getColor())));
     }
 }
