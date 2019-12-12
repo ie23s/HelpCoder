@@ -9,8 +9,16 @@ public class ProgressUtil {
     private float progress = 0;
 
     public void updateProgress(float progress) {
-        this.green = (int) ((255 - BLUE) * progress + BLUE);
-        this.red = (int) ((255 - BLUE) * (1 - progress) + BLUE);
+        if(progress <  0.5) {
+            this.green = (int) ((255 - BLUE) * progress * 2 + BLUE);
+            this.red = 255;
+        } else if(progress == 0.5) {
+            this.green = this.red = 255;
+        } else {
+            this.green = 255;
+            this.red = (int) ((255 - BLUE) * (1 - progress*2) + BLUE);
+        }
+        this.progress = progress;
     }
 
     public int getColor() {
