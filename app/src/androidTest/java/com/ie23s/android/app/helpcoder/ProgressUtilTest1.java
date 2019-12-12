@@ -17,5 +17,13 @@ public class ProgressUtilTest1 {
         ProgressUtil progressUtil = new ProgressUtil();
         progressUtil.updateProgress(0.5F);
         Log.d("Color", String.format("#%06X", (0xFFFFFF & progressUtil.getColor())));
+        progressUtil.updateProgress(0.25F);
+        Log.d("Color", String.format("#%06X", (0xFFFFFF & progressUtil.getColor())));
+        progressUtil.updateProgress(0.75F);
+        Log.d("Color", String.format("#%06X", (0xFFFFFF & progressUtil.getColor())));
+        progressUtil.updateProgress(1F);
+        Log.d("Color", String.format("#%06X", (0xFFFFFF & progressUtil.getColor())));
+        progressUtil.updateProgress(0F);
+        Log.d("Color", String.format("#%06X", (0xFFFFFF & progressUtil.getColor())));
     }
 }

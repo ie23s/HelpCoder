@@ -3,7 +3,7 @@ package com.ie23s.android.app.helpcoder.utils;
 import android.graphics.Color;
 
 public class ProgressUtil {
-    private static final int BLUE = 0;
+    private static final int BLUE = 160;
     private int green = BLUE;
     private int red = 255;
     private float progress = 0;
