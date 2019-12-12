@@ -8,7 +8,7 @@ import com.ie23s.android.app.helpcoder.utils.ProgressUtil;
 
 
 @RunWith(AndroidJUnit4.class)
-public class ProgressUtilTest {
+public class ProgressUtilTest1 {
 
     @Test
     public void updateProgress() {
