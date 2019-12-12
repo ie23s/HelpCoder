@@ -1,5 +1,7 @@
 package com.ie23s.android.app.helpcoder;
 
+import android.util.Log;
+
 import androidx.test.ext.junit.runners.AndroidJUnit4;
 
 import org.junit.Test;
@@ -14,6 +16,6 @@ public class ProgressUtilTest1 {
     public void updateProgress() {
         ProgressUtil progressUtil = new ProgressUtil();
         progressUtil.updateProgress(0.5F);
-        System.out.println(progressUtil.getColor() + "");
+        Log.i("Color", String.format("#%06X", (0xFFFFFF & progressUtil.getColor())));
     }
 }
