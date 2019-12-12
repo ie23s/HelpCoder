@@ -1,4 +1,4 @@
-package com.ie23s.android.app.helpcoder.utils;
+package com.ie23s.android.app.helpcoder;
 
 import androidx.test.ext.junit.runners.AndroidJUnit4;
 
