@@ -16,7 +16,7 @@ public class ProgressUtil {
             this.green = this.red = 255;
         } else {
             this.green = 255;
-            this.red = (int) ((255 - BLUE) * (1 - progress*2) + BLUE);
+            this.red = (int) ((255 - BLUE) * (1 - progress) + BLUE);
         }
         this.progress = progress;
     }
