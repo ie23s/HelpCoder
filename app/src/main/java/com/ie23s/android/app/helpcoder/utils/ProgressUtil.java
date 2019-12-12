@@ -9,14 +9,14 @@ public class ProgressUtil {
     private float progress = 0;
 
     public void updateProgress(float progress) {
-        if(progress <  0.5) {
-            this.green = 255;
-            this.red = (int) ((255 - BLUE) * (1 - progress*2) + BLUE);
+        if(progress <  0.5F) {
+            this.red = 255;
+            this.green = (int) ((255 - BLUE) * progress * 2 + BLUE);
         } else if(progress == 0.5) {
             this.green = this.red = 255;
         } else {
-            this.red = 255;
-            this.green = (int) ((255 - BLUE) * progress * 2 + BLUE);
+            this.green = 255;
+            this.red = (int) ((255 - BLUE) * (1 - progress*2) + BLUE);
         }
         this.progress = progress;
     }
