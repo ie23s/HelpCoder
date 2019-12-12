@@ -4,8 +4,8 @@ import androidx.test.ext.junit.runners.AndroidJUnit4;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import com.ie23s.android.app.helpcoder.utils.ProgressUtil;
 
-import static org.junit.Assert.*;
 
 @RunWith(AndroidJUnit4.class)
 public class ProgressUtilTest {
